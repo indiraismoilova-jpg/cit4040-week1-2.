@@ -14,3 +14,4 @@ public class ReadingTime {
 
         return minutes;
     }
+}
