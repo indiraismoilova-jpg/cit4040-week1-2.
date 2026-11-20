@@ -6,6 +6,11 @@ public class ReadingTime {
     }
 
     static int readingTime(int pages) {
-        return pages * 2;
+        int minutes = pages * 2;
+
+        if (pages > 500) {
+            minutes = minutes + minutes / 10;
+        }
+
+        return minutes;
     }
-}
